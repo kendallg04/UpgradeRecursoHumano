@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SIGRH.Models;
 
-public class CertificacionView
+public class CertificacionView : Certificacion
 {
     public string IdCertificacionesCol { get; set; } = string.Empty;
     public string IdEstatusCol { get; set; } = string.Empty;

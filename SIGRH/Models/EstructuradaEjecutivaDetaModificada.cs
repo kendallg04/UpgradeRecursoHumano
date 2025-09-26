@@ -2,7 +2,7 @@ using System;
 
 namespace SIGRH.Models;
 
-public class EstructuradaEjecutivaDataModificada
+public class EstructuradaEjecutivaDetaModificada : EstructuraEjecutiva
 {
     public int IdEstructuraEjecutivaDetaModifica { get; set; }
     public int CodigoDet { get; set; }
