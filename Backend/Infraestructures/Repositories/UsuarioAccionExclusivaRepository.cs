@@ -49,8 +49,8 @@ public class UsuarioAccionExclusivaRepository : IUsuarioAccionExclusiva
         return results.ToList();
     }
 
-    // public Task<string> ObtenerCorreoDeUsuario(int idUser)
-    // {
+    public Task<string> ObtenerCorreoDeUsuario(int idUser)
+    {
 
-    // }
+    }
 }

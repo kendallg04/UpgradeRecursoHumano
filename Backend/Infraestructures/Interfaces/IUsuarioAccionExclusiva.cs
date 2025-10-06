@@ -10,5 +10,5 @@ public interface IUsuarioAccionExclusiva
 
     Task<PassUsuarioDB?> ObtenerUsuarioAsync(LoginDTO request);
 
-    // Task<string> ObtenerCorreoDeUsuario(int idUser);
+    Task<string> ObtenerCorreoDeUsuario(int idUser);
 }
