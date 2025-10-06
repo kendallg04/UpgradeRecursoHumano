@@ -1,0 +1,28 @@
+﻿body {
+}
+
+.input_text_asistencia {
+    max-width: 480px !important;
+}
+
+.input_text_asistencia_2 {
+    max-width: 80% !important;
+}
+
+.input_textarea_asistencia {
+    max-width: 480px !important;
+    height: 150px !important;
+}
+
+.input_text_expediente_nivel {
+    max-width: 320px !important;
+}
+
+.input_textarea_expediente_nivel {
+    max-width: 320px !important;
+    height: 80px !important;
+}
+
+.botones-asistencia {
+    background-color: #375a7f !important;
+}

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData[index: "Title"] - SIGRH</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SIGRH.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="d-flex flex-column" style="height: 100vh; overflow: hidden;">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-light shadow-none">
+            <div class="container-fluid position-relative d-flex align-items-center">
+
+                <a class="navbar-brand position-absolute start-50 translate-middle-x d-flex align-items-center"
+                    href="#">
+                    <img src="~/image/RRHH.png" class="me-2" alt="Recursos Humanos" style="height: 40px;" />
+
+                    <h2 class="h5 mb-0 d-none d-lg-block">
+                        Sistema Integrado de Gestión de Recursos Humanos
+                    </h2>
+
+                    <span class="fw-bold d-lg-none">SIGRH</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav d-flex flex-row px-3">
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="http://www.utp.ac.pa/" target="_blank">Portal UTP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://correo.utp.ac.pa/" target="_blank">Correo UTP</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-fill bg-main d-flex justify-content-center align-items-center" style="margin-top: 70px;">
+        @RenderBody()
+    </main>
+
+    <script type="text/javascript">
+        localStorage.clear();
+        let mensaje_avisos = document.querySelector('#mensaje_avisos');
+        mensaje_avisos.style.display = 'none';
+    </script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

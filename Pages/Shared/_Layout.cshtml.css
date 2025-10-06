@@ -1,0 +1,23 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.navbar {
+    height: 70px;
+}
+
+.bg-main {
+    background: url('/image/login_background2.png') no-repeat center center;
+    background-size: 100% 100%;
+    height: calc(100vh - 70px);
+    width: 100%;
+}

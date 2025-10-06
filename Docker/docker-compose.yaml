@@ -1,0 +1,17 @@
+name: SIGRH
+services:
+  smtp4dev:
+    image: rnwood/smtp4dev
+    ports:
+      - "8001:80"   
+      - "25:25" 
+    volumes:
+      - smtp4dev-data:/smtp4dev
+    networks:
+      - utp
+    restart: unless-stopped
+
+volumes:
+  smtp4dev-data:
+networks:
+  utp:
