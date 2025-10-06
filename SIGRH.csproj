@@ -20,6 +20,10 @@
     <Folder Include="wwwroot\image\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include=".github\workflows\build.yml" />
+  </ItemGroup>
+
 <ItemGroup>
   <Reference Include="BibliotecaCore">
     <HintPath>lib\BibliotecaCore.dll</HintPath>
