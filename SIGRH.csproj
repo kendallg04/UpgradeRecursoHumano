@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
-    <PackageReference Include="Captcha" Version="4.4.2" />
     <PackageReference Include="Dapper" Version="2.1.66" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.9" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.1" />
@@ -26,7 +25,7 @@
 
 <ItemGroup>
   <Reference Include="BibliotecaCore">
-    <HintPath>lib\BibliotecaCore.dll</HintPath>
+    <HintPath>\Backend\lib\BibliotecaCore.dll</HintPath>
      <Private>true</Private>
   </Reference>
 </ItemGroup>
